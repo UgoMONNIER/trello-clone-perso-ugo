@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+## Clone de Trello en Node.js et React.js
+Ce projet a pour objectif de recréer les fonctionnalités principales de la célèbre application de gestion de projets Trello en utilisant Node.js pour le backend et React.js pour l'interface utilisateur (frontend).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Fonctionnalités principales
+## 1. Backend avec Node.js
+Le serveur est construit avec Node.js et expose des API REST pour gérer les différentes fonctionnalités du clone de Trello. Les routes permettent, entre autres, de gérer les utilisateurs, les espaces de travail, les projets, ainsi que les tâches et leurs statuts.
 
-## Available Scripts
+## 2. Frontend avec React.js
+L'interface utilisateur est développée en React.js, offrant une expérience fluide et réactive pour gérer les tableaux de bord, les projets et les tâches, similaire à l'interface de Trello. Chaque action effectuée par l'utilisateur (comme la création d'un projet ou le déplacement d'une tâche) est immédiatement reflétée dans l'interface grâce à React.
 
-In the project directory, you can run:
+## Authentification avec Firebase
+L'inscription, la connexion et la gestion des sessions des utilisateurs sont gérées via Firebase Authentication. Cela permet de garantir un accès sécurisé et une expérience utilisateur simplifiée pour la création de comptes et la connexion.
 
-### `npm start`
+## Fonctionnalités d'authentification :
+Création de compte via e-mail et mot de passe.
+Connexion sécurisée avec Firebase Authentication.
+Gestion des sessions utilisateur et protection des routes sensibles.
+Gestion des tableaux de bord et des espaces de travail
+Une fois l'utilisateur connecté, il accède à plusieurs tableaux de bord personnalisés.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Fonctionnalités des tableaux de bord :
+Espace de travail : Chaque utilisateur peut créer plusieurs espaces de travail (ou workspaces). Ces espaces permettent d'organiser les différents projets au sein d'une même équipe ou autour d'un même thème.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Création de projets : À l'intérieur de chaque espace de travail, l'utilisateur peut créer un ou plusieurs projets. Ces projets représentent les grandes lignes du travail à accomplir.
 
-### `npm test`
+Gestion des tâches : Pour chaque projet, l'utilisateur peut créer des tâches (ou cards), les assigner à des catégories (ou listes), et modifier leur statut en fonction de leur progression (par exemple : À faire, En cours, Terminé).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Fonctionnalités avancées :
+Changement de statut des tâches : Les tâches peuvent être déplacées entre différentes catégories (listes) pour refléter leur avancement dans le projet, à l'image du système de Trello.
+Catégorisation flexible : L'utilisateur peut créer et personnaliser les catégories de tâches en fonction de ses besoins spécifiques.
+Technologies utilisées
+Backend :
+Node.js : Pour gérer les API REST et l'interaction avec la base de données.
+Express.js : Pour simplifier la gestion des routes.
+Frontend :
+React.js : Pour une interface dynamique et réactive.
+React Router : Pour la gestion des différentes pages de l'application (tableaux de bord, projets, etc.).
+Authentification :
+Firebase Authentication : Pour gérer la création et la gestion des utilisateurs.
+Installation et Lancement du Projet
+Prérequis :
+Node.js et npm doivent être installés sur votre machine.
+Un compte Firebase pour la gestion de l'authentification.
+Étapes d'installation :
+Clonez le dépôt :
 
-### `npm run build`
+git clone https://github.com/votre-utilisateur/votre-repo.git
+cd votre-repo
+Installez les dépendances :
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm install
+Configurez Firebase :
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Créez un projet Firebase et activez Firebase Authentication.
+Récupérez votre fichier de configuration Firebase (API Key, Auth Domain, etc.) et mettez-le à jour dans le projet.
+Lancez le projet :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+npm start
+Le projet sera alors accessible à l'adresse http://localhost:3000.
