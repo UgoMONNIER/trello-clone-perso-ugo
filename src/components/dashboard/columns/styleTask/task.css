@@ -1,0 +1,12 @@
+.lign{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tableau{
+    background-image: url('https://picsum.photos/1500') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
