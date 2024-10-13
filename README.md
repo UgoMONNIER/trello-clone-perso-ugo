@@ -44,8 +44,8 @@ Un compte Firebase pour la gestion de l'authentification.
 Étapes d'installation :
 Clonez le dépôt :
 
-git clone https://github.com/votre-utilisateur/votre-repo.git
-cd votre-repo
+git clone https://github.com/UgoMONNIER/trello-clone-perso-ugo.git
+cd trello-clone-perso-ugo
 Installez les dépendances :
 
 npm install
