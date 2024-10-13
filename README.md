@@ -46,9 +46,10 @@ Clonez le dépôt :
 
 git clone https://github.com/UgoMONNIER/trello-clone-perso-ugo.git
 cd trello-clone-perso-ugo
-Installez les dépendances :
 
+Installez les dépendances :
 npm install
+
 Configurez Firebase :
 
 Créez un projet Firebase et activez Firebase Authentication.
