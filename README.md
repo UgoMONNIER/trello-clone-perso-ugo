@@ -29,14 +29,20 @@ Fonctionnalités avancées :
 Changement de statut des tâches : Les tâches peuvent être déplacées entre différentes catégories (listes) pour refléter leur avancement dans le projet, à l'image du système de Trello.
 Catégorisation flexible : L'utilisateur peut créer et personnaliser les catégories de tâches en fonction de ses besoins spécifiques.
 Technologies utilisées
-Backend :
+
+## Backend :
+
 Node.js : Pour gérer les API REST et l'interaction avec la base de données.
 Express.js : Pour simplifier la gestion des routes.
-Frontend :
+
+## Frontend :
+
 React.js : Pour une interface dynamique et réactive.
+
 React Router : Pour la gestion des différentes pages de l'application (tableaux de bord, projets, etc.).
-Authentification :
-Firebase Authentication : Pour gérer la création et la gestion des utilisateurs.
+
+Authentification : Firebase Authentication : Pour gérer la création et la gestion des utilisateurs.
+
 Installation et Lancement du Projet
 Prérequis :
 Node.js et npm doivent être installés sur votre machine.
